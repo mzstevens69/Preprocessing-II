@@ -168,10 +168,22 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+@media (max-width: 500px) {
+  .container {
+    max-width: 400px;
+  }
+}
 nav {
   display: flex;
   padding: 2%;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
 nav a {
   padding: 2%;
@@ -179,9 +191,19 @@ nav a {
   font-size: 1.4rem;
   color: #212529;
 }
+@media (max-width: 500px) {
+  nav a {
+    font-size: 0.75rem;
+  }
+}
 nav .funB {
   margin-left: 9%;
   margin-right: 35%;
+}
+@media (max-width: 500px) {
+  nav .funB {
+    font-size: 1.8rem;
+  }
 }
 .footer {
   width: 100%;
@@ -194,15 +216,16 @@ nav .funB {
   font-size: 1.6rem;
   padding: 20px;
 }
+.home hr {
+  border-top: 2px dashed #C0C0C0;
+  margin: 2% 0;
+}
 .home header {
   border-bottom: 2px dashed #C0C0C0;
 }
 @media (max-width: 500px) {
-  .home header {
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
-    width: 80%;
+  .home header p {
+    font-size: 1.4rem;
   }
 }
 .home .lilbus {
@@ -218,6 +241,7 @@ nav .funB {
 @media (max-width: 500px) {
   .home .content-section {
     flex-direction: column;
+    display: flex;
   }
 }
 .home .content-section .text-content {
@@ -228,8 +252,14 @@ nav .funB {
   .home .content-section .text-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 100%;
+  }
+  .home .content-section .text-content h2 {
+    margin-top: 4%;
+    text-align: left;
+  }
+  .home .content-section .text-content p {
+    font-size: 1.3rem;
   }
 }
 .home .content-section .img-content {
@@ -239,9 +269,9 @@ nav .funB {
 @media (max-width: 500px) {
   .home .content-section .img-content {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: center;
-    width: 80%;
+    width: 100%;
   }
 }
 .home .content-section .img-content img {
@@ -253,8 +283,6 @@ nav .funB {
 @media (max-width: 500px) {
   .home .content-section .inverse-content {
     display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
     width: 100;
   }
 }
@@ -282,9 +310,7 @@ nav .funB {
 }
 @media (max-width: 500px) {
   .home .content-destination {
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    width: 100%;
   }
 }
 .home .content-destination img {
@@ -297,31 +323,66 @@ nav .funB {
     align-items: center;
   }
 }
-.home hr {
-  border-top: 2px dashed #C0C0C0;
-  margin: 4% 0;
-}
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
 @media (max-width: 500px) {
   .home .content-pick {
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
+    margin-left: 1%;
+    width: 80%;
   }
 }
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
+.home .content-pick .destination .btn {
+  display: block;
+  background-color: teal;
+  margin: 0 1% 1% 0;
+  cursor: pointer;
+  width: 200px;
+  height: 45px;
+  font-size: 2rem;
+  border-radius: 10px;
+  color: white;
+}
+.home .content-pick .destination .btn:hover {
+  background-color: white;
+  color: teal;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    display: block;
+    background-color: teal;
+    margin: 0 1% 1% 0;
+    cursor: pointer;
+    width: 300px;
+    height: 45px;
+    font-size: 2rem;
+    border-radius: 10px;
+    color: white;
+    margin-left: 10%;
+  }
+  .home .content-pick .destination .btn:hover {
+    background-color: white;
+    color: teal;
+  }
+}
 @media (max-width: 500px) {
   .home .content-pick .destination {
-    justify-content: center;
+    width: 100%;
     flex-direction: column;
-    align-items: center;
+  }
+  .home .content-pick .destination h4 {
+    font-size: 2rem;
+    margin: 0 0 0 10%;
+  }
+  .home .content-pick .destination p {
+    font-size: 1.3rem;
+    margin: 0 0 0 10%;
   }
 }

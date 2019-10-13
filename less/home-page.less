@@ -4,17 +4,28 @@
   
 
 
-  
+ 
 .home {
+  hr {
+    border-top: 2px dashed @navigation-border;
+    margin: 2% 0;
+     
+      }
+  
+  
 
+ 
     header {
       border-bottom: 2px dashed @navigation-border;
 
      ///////Media Query///////
       @media @phone {
-        .displayJustFlex(center, column);
-        display: flex;
-        width: 80%;
+        p {
+          font-size: 1.4rem;
+        }
+
+   
+       
         }//closes media query
       }//closes header
     .lilbus {
@@ -32,6 +43,7 @@
     ///////////////////////////////
       @media @phone {
         flex-direction: column;
+        display: flex;
         }//closes media query
 
    
@@ -43,8 +55,14 @@
       @media @phone {
         display: flex;
         flex-direction: column;
-        align-items: center;
         width: 100%;
+        h2 {
+          margin-top: 4%;
+          text-align: left;
+        }
+        p {
+          font-size: 1.3rem;
+        }//closes p
       }//closes media query
     }// closes content section
 
@@ -53,9 +71,9 @@
         padding-left: 1%;
         @media @phone {
           display: flex;
-          flex-direction: column;
+          flex-direction: column-reverse;
           align-items: center;
-          width: 80%;
+          width: 100%;
           }//closes media query
 
         img {
@@ -65,26 +83,29 @@
     }//closes img content
     .inverse-content {
       padding-bottom: 30px;
-      // border-bottom: 2px dashed @navigation-border;
+     
       ///////////////////////
       @media @phone {
         display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
+      
+        // align-items: center;
         width: 100;
         }//closes media query
   
       .text-content {
         padding-left: 1%;
         padding-right: 0;
+        //////////////////////
         @media @phone {
           width:100;
+
         }//closes media query
       }//closes text content
   
       .img-content {
         padding-right: 1%;
         padding-left: 0;
+        //////////////////////
         @media @phone {
           width:100;
         }//closes media query
@@ -94,11 +115,10 @@
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
-   
+   ////////////////////////
     @media @phone {
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
+      width: 100%;
+
     }//closes media query
 
     img {
@@ -111,35 +131,49 @@
       }//closes media query
     }//closes img
   }//closes content-destination
-  hr {
-    border-top: 2px dashed @navigation-border;
-    margin: 4% 0;
-  }
 
-
-
-
-
+  
   .content-pick {
     padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    
 
     ///////////////////////////////
     @media @phone {
-      justify-content: center;
       flex-direction: column;
-      align-items: center;
+      margin-left: 1%;
+      width: 80%;
+      
       }//closes media
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
-      @media @phone {
-        justify-content: center;
+      .btn {
+        .my-btn(@bg-color: teal, @width: 200px, @txt-color: white); 
+        ////////////////////////////////////////////////////////////////
+          @media @phone {
+            .my-btn(@bg-color: teal, @width: 300px, @txt-color: white);
+            margin-left: 10%; 
+
+          }//close media query
+      }
+      /////////////////////////////
+         @media @phone {
+        width: 100%;
         flex-direction: column;
-        align-items: center;
+        
+          h4 {
+            font-size: 2rem;
+            margin: 0 0 0 10%;
+          }
+          p {
+            font-size: 1.3rem;
+            margin: 0 0 0 10%;
+          }
+        
+      
       }//closes media
         
 
