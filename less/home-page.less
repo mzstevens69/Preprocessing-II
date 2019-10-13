@@ -1,61 +1,178 @@
-.home {
 
-  .content-section {
+  
+  
+  
+
+
+ 
+.home {
+  hr {
+    border-top: 2px dashed @navigation-border;
+    margin: 2% 0;
+     
+      }//closes hr
+  @media @phone {
+    p {
+      font-size: 1.3rem;
+      
+
+  }//closes p
+  
+  }//closes media query 
+    header {
+      border-bottom: 2px dashed @navigation-border;       
+    }//closes header
+    .lilbus {
+      max-width: 100%;
+      margin-bottom: 2%;;
+    }//closes lilbus
+
+
+
+    .content-section {
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-
-   
+    justify-content: space-between;      
+    ///////////////////////////////
+      @media @phone {
+        // flex-direction: column-reverse; 
+  
+       }//closes media query
     
     .text-content {
       width: 48%;
-      padding-right: 1%;
-    }
+      padding-right: 1%;      
+    ///////////////////////////  
+      @media @phone {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        h2 {
+          margin-top: 4%;
+          text-align: left;
+        }//closes h2
+      }//closes media query
+    }// closes content section
 
     .img-content {
-      width: 48%;
-      padding-left: 1%;
+        width: 48%;
+        padding-left: 1%;
+        //////////////////////
+        @media @phone {
+          display: flex;
+           
+           
+          width: 100%;
+          }//closes media query
 
       img {
-        border-radius: 10px;
-      }
-    }
-  }
+          border-radius: 10px;
+          
+           
 
-  .inverse-content {
-    padding-bottom: 30px;
-    border-bottom: 2px dashed @navigation-border;
-
+      }//closes img
+    }//closes img content
+  }//closes content section 
+    .inverse-content {
+      padding-bottom: 30px;
+     
+      ///////////////////////
+      @media @phone {     
+         width: 100;
+         display: flex;
+         flex-direction: column-reverse;
+      
+        
+         
+        }//closes media query
+  
     .text-content {
-      padding-left: 1%;
-      padding-right: 0;
-    }
+        padding-left: 1%;
+        padding-right: 0;
+        //////////////////////
+        @media @phone {
+          width:100;
 
+        }//closes media query
+      }//closes text content
+  
     .img-content {
-      padding-right: 1%;
-      padding-left: 0;
-    }
-  }
-
+        padding-right: 1%;
+        padding-left: 0;
+        //////////////////////
+        @media @phone {
+          width:100%;
+          }//closes media query
+        }//closes img content
+      }//closes inverse content
+    
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
+   ////////////////////////
+    @media @phone {
+      width: 100%;
+
+    }//closes media query
 
     img {
       border-radius: 10px;
-    }
-  }
+      /////////////////////
+      @media @phone {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }//closes media query
+    }//closes img
+  }//closes content-destination
 
+  
   .content-pick {
     padding-top: 30px;
-    border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
+    
+
+    ///////////////////////////////
+    @media @phone {
+      flex-direction: column;      
+      margin-left: 1%;
+      width: 80%;
+      
+      }//closes media
 
     .destination {
       width: 30%;
       margin-bottom: 30px;
-    }
-  }
+      .btn {
+        .my-btn(@bg-color: teal, @width: 200px, @txt-color: white); 
+        ////////////////////////////////////////////////////////////////
+          @media @phone {
+            .my-btn(@bg-color: teal, @width: 300px, @txt-color: white);
+            margin-left: 10%; 
+
+          }//close media query
+      }
+      /////////////////////////////
+         @media @phone {
+        width: 100%;
+        flex-direction: column;
+        
+          h4 {
+            font-size: 2rem;
+            margin: 0 0 0 10%;
+          }
+          p {
+            font-size: 1.3rem;
+            margin: 0 0 0 10%;
+          }
+        
+      
+      }//closes media
+        
+
+    }//closes destination
+  }//closes content pick
+ 
 }// home

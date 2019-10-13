@@ -1,1 +1,50 @@
 // Navigation Styles here
+
+
+ nav {
+    display: flex;
+    padding: 2%;
+    border-bottom: 2px dashed @navigation-border; 
+    /////////////////////////////////////////////
+    @media @phone {
+        justify-content: center;          
+        text-align: center;
+        flex-wrap: wrap;//not flex-diretion column here!!!!       
+    }//closes media query
+    a {
+        padding: 2%;
+        text-decoration: none;
+        font-size: 1.4rem;
+        color: @shark;
+        ///////////////////////
+        @media @phone {    
+            justify-content: center;                  
+            font-size: .75rem;
+            height: 3px;
+            padding: 0 9%;
+            
+         
+
+        }
+        
+    }//closes a
+
+    .funB {
+    margin-left: 9%;
+    margin-right: 35%;
+
+        /////Media Query//////////////    
+        @media @phone {
+            display: flex;
+            flex-direction: column;
+            font-size: 1.8rem;
+            width: 100%;
+            margin: 0;
+        
+        
+        
+        
+ 
+        }//media query
+    }  
+ }  
