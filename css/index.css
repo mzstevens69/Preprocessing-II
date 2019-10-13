@@ -183,6 +183,8 @@ nav {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    height: 100%;
+    width: 100%;
   }
 }
 nav a {
@@ -193,7 +195,8 @@ nav a {
 }
 @media (max-width: 500px) {
   nav a {
-    text-align: center;
+    justify-content: center;
+    width: 100%;
     font-size: 0.75rem;
   }
 }
@@ -203,6 +206,8 @@ nav .funB {
 }
 @media (max-width: 500px) {
   nav .funB {
+    display: flex;
+    flex-direction: column;
     font-size: 1.8rem;
     width: 100%;
     margin: 0;
@@ -297,7 +302,7 @@ nav .funB {
 }
 @media (max-width: 500px) {
   .home .content-section .inverse-content .img-content {
-    width: 100;
+    width: 100%;
   }
 }
 .home .content-destination {
