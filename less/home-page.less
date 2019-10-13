@@ -8,24 +8,18 @@
 .home {
 
     header {
-      // padding: 2% 0;
       border-bottom: 2px dashed @navigation-border;
+
      ///////Media Query///////
       @media @phone {
         .displayJustFlex(center, column);
-      // justify-content: center;
-      // flex-direction: column;
-      display: flex;
-      width: 80%;
+        display: flex;
+        width: 80%;
         }//closes media query
-  .bus-wrapper {
-    
-
-  }  
-    }//closing header
+      }//closes header
     .lilbus {
       max-width: 100%;
-
+      margin-bottom: 2%;;
     }//closes lilbus
 
 
@@ -71,7 +65,7 @@
     }//closes img content
     .inverse-content {
       padding-bottom: 30px;
-      border-bottom: 2px dashed @navigation-border;
+      // border-bottom: 2px dashed @navigation-border;
       ///////////////////////
       @media @phone {
         display: flex;
@@ -117,6 +111,10 @@
       }//closes media query
     }//closes img
   }//closes content-destination
+  hr {
+    border-top: 2px dashed @navigation-border;
+    margin: 4% 0;
+  }
 
 
 
