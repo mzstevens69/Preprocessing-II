@@ -36,7 +36,8 @@
     justify-content: space-between;      
     ///////////////////////////////
       @media @phone {
-        flex-direction: column-reverse;      
+        // flex-direction: column-reverse; 
+  
        }//closes media query
     
     .text-content {
@@ -72,12 +73,16 @@
 
       }//closes img
     }//closes img content
-  .inverse-content {
+  }//closes content section 
+    .inverse-content {
       padding-bottom: 30px;
      
       ///////////////////////
       @media @phone {     
          width: 100;
+         display: flex;
+         flex-direction: column-reverse;
+      
         
          
         }//closes media query
@@ -98,10 +103,10 @@
         //////////////////////
         @media @phone {
           width:100%;
-        }//closes media query
-      }//closes img content
-    }//closes inverse content
-  }//closes content section 
+          }//closes media query
+        }//closes img content
+      }//closes inverse content
+    
   .content-destination {
     width: 75%;
     margin: 0 auto 30px;
