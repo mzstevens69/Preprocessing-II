@@ -7,7 +7,10 @@
     border-bottom: 2px dashed @navigation-border; 
     /////////////////////////////////////////////
     @media @phone {
-        .displayJustFlex(center, column);
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        
        
         
         
@@ -19,8 +22,9 @@
         color: @shark;
         ///////////////////////
         @media @phone {
-            
+            text-align: center;
             font-size: .75rem;
+            
          
 
         }
@@ -34,6 +38,10 @@
         /////Media Query//////////////    
         @media @phone {
         font-size: 1.8rem;
+        width: 100%;
+        margin: 0;
+        
+        
         
         
  
