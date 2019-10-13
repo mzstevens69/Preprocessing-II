@@ -223,13 +223,13 @@ nav .funB {
   border-top: 2px dashed #C0C0C0;
   margin: 2% 0;
 }
+@media (max-width: 500px) {
+  .home p {
+    font-size: 1.3rem;
+  }
+}
 .home header {
   border-bottom: 2px dashed #C0C0C0;
-}
-@media (max-width: 500px) {
-  .home header p {
-    font-size: 1.4rem;
-  }
 }
 .home .lilbus {
   max-width: 100%;
@@ -243,7 +243,7 @@ nav .funB {
 }
 @media (max-width: 500px) {
   .home .content-section {
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 .home .content-section .text-content {
@@ -260,9 +260,6 @@ nav .funB {
     margin-top: 4%;
     text-align: left;
   }
-  .home .content-section .text-content p {
-    font-size: 1.3rem;
-  }
 }
 .home .content-section .img-content {
   width: 48%;
@@ -271,7 +268,6 @@ nav .funB {
 @media (max-width: 500px) {
   .home .content-section .img-content {
     display: flex;
-    flex-direction: column-reverse;
     width: 100%;
   }
 }
@@ -283,7 +279,6 @@ nav .funB {
 }
 @media (max-width: 500px) {
   .home .content-section .inverse-content {
-    flex-direction: column-reverse;
     width: 100;
   }
 }

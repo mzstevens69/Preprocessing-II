@@ -10,24 +10,25 @@
     border-top: 2px dashed @navigation-border;
     margin: 2% 0;
      
-      }
+      }//closes hr
+  @media @phone {
+    p {
+      font-size: 1.3rem;
+
+  }//closes p
   
-  
+  }//closes media query
 
  
     header {
       border-bottom: 2px dashed @navigation-border;
 
-     ///////Media Query///////
-      @media @phone {
-        p {
-          font-size: 1.4rem;
-        }
+
 
    
        
-        }//closes media query
-      }//closes header
+        
+    }//closes header
     .lilbus {
       max-width: 100%;
       margin-bottom: 2%;;
@@ -42,9 +43,15 @@
     justify-content: space-between;
     ///////////////////////////////
       @media @phone {
-        flex-direction: column;
-        // display: flex;
-        }//closes media query
+        flex-direction: column-reverse;
+        
+
+
+          
+
+              
+       
+      }//closes content section
 
    
     
@@ -60,9 +67,11 @@
           margin-top: 4%;
           text-align: left;
         }
-        p {
-          font-size: 1.3rem;
-        }//closes p
+
+        // p {
+        //   font-size: 1.3rem;
+        // }//closes p
+
       }//closes media query
     }// closes content section
 
@@ -71,8 +80,9 @@
         padding-left: 1%;
         @media @phone {
           display: flex;
-          flex-direction: column-reverse;
-          // align-items: center;
+          .img-content1{
+           
+          }//closes img-content1
           width: 100%;
           }//closes media query
 
@@ -86,7 +96,7 @@
      
       ///////////////////////
       @media @phone {
-        flex-direction: column-reverse;
+        
          width: 100;
         }//closes media query
   
@@ -140,6 +150,7 @@
     ///////////////////////////////
     @media @phone {
       flex-direction: column;
+      
       margin-left: 1%;
       width: 80%;
       
